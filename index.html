@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <title>Password Toggler</title>
+</head>
+<!-- CSS style Part -->
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(222, 46, 46);
+}
+.passBox{
+    width: 450px;
+    height: 80px;
+    margin: 300px;
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+}
+.passBox input{
+    width: 90%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px 60px;
+    font-size: 20px;
+    position: absolute;
+}
+.passBox i{
+    color: rgb(255, 179, 49);
+    width: 10%;
+    position: absolute;
+    border-radius: 10px;
+    right: 0;
+    justify-content: center;
+    text-align: center;
+    margin-top: 25px;
+    margin-right: 55px;
+    font-size: 25px;
+}
+</style>
+<body>
+    <div class="passBox">
+        <input type="password" placeholder="password" id="inp">
+        <i class="fa-regular fa-face-rolling-eyes" id="itp" onclick="sisChange()"></i>
+    </div>
+
+    <!--<i class="fa-regular fa-face-rolling-eyes"></i>-->
+<!-- JavaScript part -->
+<script>
+    const inpType = document.getElementById('inp');
+    iconType.style.cursor = "pointer"
+
+    function sisChange(){
+        if(inpType.type == "password"){
+            inpType.type = "text";
+        }
+        else{
+            inpType.type = "password";
+        }
+    }
+
+</script>
+</body>
+</html>
